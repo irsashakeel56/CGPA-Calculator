@@ -1,21 +1,13 @@
-/*
- * CodeAlpha Internship — Task 1: CGPA Calculator
- * Author: Intern
- * Description: Calculates semester GPA and overall CGPA from course grades and credit hours.
- */
-
 #include <iostream>
 #include <iomanip>
 #include <vector>
 #include <string>
 using namespace std;
-
 struct Course {
     string name;
     float  gradePoints;   // e.g. A=4.0, B=3.0 ...
     int    creditHours;
 };
-
 // Convert letter grade to grade points (4.0 scale)
 float letterToPoints(const string& grade) {
     if (grade == "A+" || grade == "A")  return 4.0f;
@@ -41,10 +33,9 @@ float calculateGPA(const vector<Course>& courses) {
     }
     return (totalCredits == 0) ? 0 : totalPoints / totalCredits;
 }
-
 int main() {
     cout << "========================================\n";
-    cout << "       CodeAlpha — CGPA Calculator      \n";
+    cout << "             CGPA Calculator            \n";
     cout << "========================================\n\n";
 
     int numSemesters;
@@ -82,7 +73,6 @@ int main() {
             cin.ignore();
             courses.push_back(c);
         }
-
         // Print semester table
         cout << "\n  Course                        Credits   Grade\n";
         cout << "  " << string(50, '-') << "\n";
@@ -107,7 +97,6 @@ int main() {
         cout << "  " << string(50, '-') << "\n";
         cout << "  Semester GPA: " << fixed << setprecision(2) << gpa << "\n";
     }
-
     // Overall CGPA
     float cgpa = (overallCredits == 0) ? 0 : overallPoints / overallCredits;
 
@@ -123,6 +112,5 @@ int main() {
     cout << "  Overall CGPA : " << fixed << setprecision(2) << cgpa << "\n";
     cout << "  Total Credits: " << overallCredits << "\n";
     cout << "========================================\n";
-
     return 0;
 }
