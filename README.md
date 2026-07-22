@@ -1,8 +1,8 @@
-# CodeAlpha - CGPA Calculator
+CGPA Calculator
 
 ##  Project Overview
 
-The CGPA Calculator is a C++ console-based application developed as part of the CodeAlpha C++ Programming Internship. This project allows students to calculate their GPA/CGPA by entering course grades and corresponding credit hours. The program computes total grade points, total credit hours, and displays the final CGPA accurately.
+The CGPA Calculator is a C++ console-based application developed as part of the C++ Programming. This project allows students to calculate their GPA/CGPA by entering course grades and corresponding credit hours. The program computes total grade points, total credit hours, and displays the final CGPA accurately.
 
 
 ##  Objectives
@@ -57,4 +57,3 @@ CGPA = (Σ(Grade Point × Credit Hours)) / (Σ Credit Hours)
 
 ##  Author
 **Irsa Shakeel**
-C++ Programming Intern – CodeAlpha
